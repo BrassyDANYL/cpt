@@ -57,12 +57,12 @@
                             <?php the_field('bold_part_of_subtitle'); ?>
                         </span> <?php the_field('subtitle'); ?>
                     </div>
-                    <a href="#" class="start__button">Start <span class="arrow-animation"><img
+                    <a href="" class="start__button">Start <span class="arrow-animation"><img
                                 src="assets/img/icons/right-arrow.png" alt="" class="arrow__icon "></span></a>
                     <div class="download__links ">
-                        <a download="<?php the_field('paper_file'); ?>"
+                        <a download="<?php echo get_field('paper_file'); ?>"
                            class="homepage__link download__links-item">Download paper</a>
-                        <a download="<?php the_field('app_file'); ?>"
+                        <a download="<?php echo get_field('app_file'); ?>"
                            class="homepage__link download__links-item">Download appendix</a>
                     </div>
                 </div>
