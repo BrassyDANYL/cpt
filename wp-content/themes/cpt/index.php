@@ -62,7 +62,7 @@
                     <div class="download__links ">
                         <a download="<?php the_field('paper_file'); ?>"
                            class="homepage__link download__links-item">Download paper</a>
-                        <a download="#"
+                        <a download="<?php the_field('app_file'); ?>"
                            class="homepage__link download__links-item">Download appendix</a>
                     </div>
                 </div>
