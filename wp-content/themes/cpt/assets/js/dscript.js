@@ -1,18 +1,57 @@
 $(".i1").on("click", function () {
-   $(".connector1").toggleClass('visible'),
-      $(".pop-up1").toggleClass('visible');
+if($(".pop-up1").hasClass('visible')){
+   $(".i1").on("click", function () {
+      $(".connector1").removeClass('visible'),
+      $(".pop-up1").removeClass('visible');
+   });
+} else {
+$(".i1").on("click", function () {
+   $(".connector1").addClass('visible'),
+   $(".pop-up1").addClass('visible');
 });
+}
+});
+
 $(".i2").on("click", function () {
-   $(".connector2").toggleClass('visible'),
-      $(".pop-up2").toggleClass('visible');
+   if ($(".pop-up2").hasClass('visible')) {
+      $(".i2").on("click", function () {
+         $(".connector2").removeClass('visible'),
+            $(".pop-up2").removeClass('visible');
+      });
+   } else {
+      $(".i2").on("click", function () {
+         $(".connector2").addClass('visible'),
+            $(".pop-up2").addClass('visible');
+      });
+   }
 });
+
 $(".i3").on("click", function () {
-   $(".connector3").toggleClass('visible'),
-      $(".pop-up3").toggleClass('visible');
+   if ($(".pop-up3").hasClass('visible')) {
+      $(".i3").on("click", function () {
+         $(".connector3").removeClass('visible'),
+            $(".pop-up3").removeClass('visible');
+      });
+   } else {
+      $(".i3").on("click", function () {
+         $(".connector3").addClass('visible'),
+            $(".pop-up3").addClass('visible');
+      });
+   }
 });
+
 $(".i4").on("click", function () {
-   $(".connector4").toggleClass('visible'),
-      $(".pop-up4").toggleClass('visible');
+   if ($(".pop-up4").hasClass('visible')) {
+      $(".i4").on("click", function () {
+         $(".connector4").removeClass('visible'),
+            $(".pop-up4").removeClass('visible');
+      });
+   } else {
+      $(".i4").on("click", function () {
+         $(".connector4").addClass('visible'),
+            $(".pop-up4").addClass('visible');
+      });
+   }
 });
 $(".lm1").on("click", function () {
    $(".al1").attr('style', 'visibility: visible; opacity: 92%; transition: all 0.5s ease 0s');
@@ -46,7 +85,7 @@ $("#i6-4").on("mouseout", function () {
    $("#i6-3").removeClass("orangeback");
 });
 $("#i6-4").on("mouseover", function () {
-   $("#i6-1").addClass("orangeback");z
+   $("#i6-1").addClass("orangeback"); 
    $("#i6-2").addClass("orangeback");
    $("#i6-3").addClass("orangeback");
 });
@@ -74,7 +113,7 @@ $(document).ready(function () {
    function check_device_format() {
       var width = $(window).width();
       var height = $(window).height();
-      if (height/width >= 4/3) {
+      if (height / width >= 4 / 3) {
          $('.container').addClass('device-portrait');
          $('.main').addClass('device-portrait');
       } else {
