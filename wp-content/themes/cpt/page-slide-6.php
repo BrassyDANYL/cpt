@@ -150,19 +150,7 @@
                     <img src="<?php echo get_theme_file_uri() ?>/assets/img/logo_white.svg" alt="">
                 </div>
             </div>
-            <div class="i i1" id="i6-1">i
-                <div class="ring"></div>
-                <span class="connector connector1"></span>
-                <div class="pop-up pop-up1">
-                    <div class="close-pop-up"><img
-                            src="<?php echo get_theme_file_uri();?>/assets/img/icons/gray-crestic.png" alt="x"></div>
-                    <h3><?php the_field('title_for_pop-up_1');?></h3>
-                    <span class="orange-line"></span>
-                    <p><?php the_field('description_for_pop-up_1');?></p>
-                    <button class="learn-more lm1">learn more</button>
-                </div>
-
-            </div>
+            
 
             <div class="i i2" id="i6-2">i
                 <div class="ring"></div>
@@ -179,18 +167,7 @@
             </div>
          
 
-         <div class="i i3" id="i6-3">i
-            <div class="ring"></div>
-            <span class="connector connector3"></span>
-            <div class="pop-up pop-up3">
-               <div class="close-pop-up"><img src="<?php echo get_theme_file_uri();?>/assets/img/icons/gray-crestic.png" alt="x"></div>
-               <h3><?php the_field('title_for_pop-up_1');?></h3>
-               <span class="orange-line"></span>
-               <p><?php the_field('description_for_pop-up_1');?></p>
-               <button class="learn-more lm1">learn more</button>
-            
-         </div>
-         </div>
+         
 
          <div class="i i4" id="i6-4">i
             <div class="ring"></div>
